@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Transforms</title>
+
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: bisque;
+        border: 2px black solid;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+
+        /* by using the concept of transition we can 
+            smoothly transform/rotate box to 45deg */
+        transition: all 5s ease;
+      }
+
+      .box:hover {
+        /* tranforming box */
+        /* rotate: rotates the box clockwise/anti-clockwise to provided deg */
+        transform: rotate(360deg);
+        transform: rotate(-360deg);
+
+        /* scale increase/decreases the size of box */
+        transform: scale(2);
+        transform: scale(0.5);
+
+        /* skew: tilts the box */
+        transform: skew(45deg);
+        transform: skew(-45deg);
+
+        /* translate : moves the box into diff directions 
+            with respect to x and y axis */
+        transform: translate(500px);
+        transform: translate(-500px);
+        transform: translate(0px, 500px);
+        transform: translate(0px, -500px);
+        transform: translate(500px, 500px);
+        transform: translate(-500px, -500px);
+      }
+
+      p {
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>This is 2D Transforms</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+Flexbox - 1D Layout Method
+Flexbox is a very important layout method where user/developer can provide diff diff types of layout to their web page
+Using the concept of flexbox, items/elements can arranged horizontally, vertically or any position. Also it makes sures some gap is there between two items/elements
+
+Imp to remember in flexbox :
+x axis : main axis
+y axis : cross axis
+
+
+Imp Properties in FLexbox
+display : flex -> by default flex direction is set to row
+flex-direction: row
+flex-direction: column
+
+flex-direction: row then its main axis is horizontal
+flex-direction:column then its main axis is vertical
+
+Used to wrap the flex-itmes
+flex-wrap: wrap;
+flex-wrap: nowrap;
+flex-wrap: wrap-reverse;
+
+flex-flow
+
+
+justify-content : it places flex-items accroding to main axis of flex direction
+Properties 
+start 
+end
+center
+space : around evenly between
+
+align-items : it places the flex-items accroding to the cross axis of flex direction
+align-items: start;
+align-items: center;
+align-items: end;
+align-items: stretch;
+
+Prperties applied on flex-items:
+
+order Proprty of flex-items : used to define the order of flex-items
+sequence can be changed of flex-items
+examples:
+#box1{
+            background-color: pink;
+            /* order proprerty of flex-items */
+            order: 100;
+        }
+
+#box4{
+         background-color: red;
+        /* order proprerty of flex-items */
+        order: -1;
+}
+
+
+flex-shrink property of flex-items:
+It shrinks the size of an flex items
+
+flex-shrink: 5; 
+example:
+#box1{
+    background-color: pink;
+    /* order proprerty of flex-items */
+    order: 100;
+    /* flex-shrink porperty of flex-items */
+    /* flex-shrink: 5; */
+}
+
+
+flex-grow proprty of flex-items:
+It changes/grows the size of flex-items
+example:
+flex-grow: 5
+flex-grow: 1
+flex-grow: 1
+
+
+align-self property of flex-items:
+modifies the position of particular flex-item 
+
+align-self:start
+align-self: end;
+align-self:center

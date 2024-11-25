@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: beige;
+            border: yellowgreen solid 5px;
+            margin: 2px;
+            padding: 2px;
+            height: 1500px;
+            display: flex;
+            
+
+            /* convert the flex-items to row or column */
+            /* flex-direction: row; */ 
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap : used to wrap the flex-items so that its width can't change
+            with condition: if space is not there then width will change otherwise no, 
+            kind of responsive */
+            /* flex-wrap: wrap;
+            flex-wrap: nowrap;
+            flex-wrap: wrap-reverse; */
+
+            /* justify content property(applied on main axis) : depends on flex-direction
+            if flex-direction : row then content will be justified horizontally
+            if flex-direction : column then content will justified vertically*/
+            /* justify-content: start;
+            justify-content: center;
+            justify-content: end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+            /* align-items property(applied on cross axis) : depends on flex-direction
+            if flex-direction : row then content will be justified vertically
+            */
+            /* align-items: start;
+            align-items: center;
+            align-items: end;
+            align-items: stretch; */
+        }
+        #box1{
+            background-color: pink;
+            /* order proprerty of flex-items */
+            order: 100;
+            /* flex-shrink porperty of flex-items */
+            /* flex-shrink: 5; */
+            /* flex-grow: 5; */
+        }
+        #box2{
+            background-color: green;
+            /* flex-grow: 1; */
+        }
+        #box3{
+            background-color: brown;
+            /* flex-grow: 1; */
+        }
+        #box4{
+            background-color: red;
+            /* order proprerty of flex-items */
+            order: -1;
+            /* flex-grow: 1; */
+
+            /* align-self property of flex-items */
+            /* modifies the position of particular flex-item */
+            align-self: end;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px red solid;
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div> 
+    </div>
+</body>
+</html>

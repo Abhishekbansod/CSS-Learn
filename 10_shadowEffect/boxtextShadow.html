@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: black 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: yellowgreen;
+            border: black 2px solid;
+            width: 400px;
+            height: 350px;
+            margin: 5px;
+            padding: 5px;
+
+            /* appyling shadows using box-shadow property */
+
+            /* x-axis y-axis color of shadow */
+            /* pixel can be given in negative values as well */
+            /* box-shadow: 5px 5px blueviolet; */
+
+            /* x-offset y-offset blur-radius color */
+            /* pixels can't be negative here */
+            /* box-shadow: 5px 5px 10px violet; */
+
+            /* x-offset y-offset blur-radius spread-radius color */
+            /* box-shadow: 5px 5px 10px 50px violet; */
+
+            /* inset -> applying shadow inside the box */
+            /* box-shadow: inset 10px 10px red; */
+
+            /* multiple shadows */
+            /* box-shadow: 5px 5px green, 10px 10px yellowgreen; */
+        }
+        #para1{
+            /* applying text-shadow on the text */
+            /* x-offset y-offset blur-radius color */
+            text-shadow: 2px 2px 1px pink;
+
+            /* by default shadow color is black */
+            /* color is not given below which takes black as default value */
+            /* text-shadow: 5px 5px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="../poster1.jpg" alt="imageposter">
+
+            <h2>Welcome to CSS 2.O</h2>
+
+            <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde velit animi quasi. Ipsa odit assumenda ducimus accusamus, numquam facilis totam eius earum aliquam, laboriosam aperiam? Vel aliquam sit consequuntur!</p>
+        </div>
+    </div>
+</body>
+</h

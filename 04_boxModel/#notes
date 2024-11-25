@@ -1,0 +1,17 @@
+Box-Model : It is used for designing and layout
+
+The CSS box model is essentially a box that wraps around every HTML element.    
+It consists of margin, borders, padding and actual content
+
+Every content is placed/displayed on UI is wrapped under the rectangular shape box
+
+Box Model : All the content which is rendering on the UI is rendered under the rectangular box 
+
+Four imp parts of Box-Model : 
+content
+padding
+border
+margin
+
+Padding : It is nothing but the space between content and border
+Margin : It is gap that comes after border, like inside gap from border(to content) is padding whereas outside gap from border is margin

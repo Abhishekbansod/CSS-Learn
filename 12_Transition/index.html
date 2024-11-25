@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border: solid 2px black;
+            background-color: bisque;
+            margin: 10px;
+
+
+            /* applying tansition */
+            /* transition-property: all; */
+            /* transition-property: width; */
+            /* transition-duration: 5s; */
+            /* transition-timing-function: linear; */
+            /* transition-delay: 1s; */
+
+            /* shorthand notation */
+            /* property name | duration */
+            /* property name | duration | delay */
+            /* property name | duration | easing function */
+            /* property name | duration | easing function | delay */
+            /* Apply to 2 properties */
+
+            transition: all 10s 2s ease-in-out;
+        }
+
+        .box:hover{
+            width: 1000px;
+            height: 1000px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html

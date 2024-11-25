@@ -1,0 +1,28 @@
+Transforms:
+Tranform is nothing but transforming the existed element(such as circle, rectangular size box/div) into another/different shapes.
+
+The transform CSS property lets you rotate, scale, skew, or translate an element.
+
+Properties :
+/* rotate: rotates the box clockwise/anti-clockwise to provided deg */
+transform: rotate(360deg);
+transform: rotate(-360deg);
+
+/* scale increase/decreases the size of box */
+transform: scale(2);
+transform: scale(0.5);
+
+/* skew: tilts the box */
+transform: skew(45deg);
+transform: skew(-45deg);
+
+/* translate : moves the box into diff directions 
+with respect to x and y axis */
+transform: translate(500px);
+transform: translate(-500px);
+transform: translate(0px, 500px);
+transform: translate(0px, -500px);
+transform: translate(500px, 500px);
+transform: translate(-500px, -500px)
+
+

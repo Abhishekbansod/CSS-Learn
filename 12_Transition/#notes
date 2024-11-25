@@ -1,0 +1,17 @@
+Transitions:
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+When we move from one styling to another styling without any complex process then we can call it as transition
+
+Transition is child/subset of Animation(styling changes from one to another - complex)
+
+Moving from one state of styling to another state of styling
+
+Transition properties: 
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+shorthand notation :

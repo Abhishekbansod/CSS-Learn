@@ -1,0 +1,32 @@
+CSS Grid Layout 
+Grid is basically used for creating the diff diff layouts of web page
+just like table, position and flex box we can use Grid for creating layouts.
+
+Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.
+
+CSS Grid : It is a system which is divided in the form of rows & columns
+We can say it as 2Dimensional System
+
+In simple language, it is a 2D Dimensional system, by using this system user/developer can create multiple layouts
+
+Important Properties to remember:
+
+display : grid
+row-gap: 1rem
+column-gap : 1rem
+
+grid-template-rows: 100px 100px;
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+
+<!-- Ideal way to write above properties -->
+1fr - represents the unit in fractional
+grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(3, 1fr);
+
+
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 2;
+grid-row-end: 4;

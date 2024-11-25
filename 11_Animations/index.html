@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+
+        .box{
+            width: 300px;
+            height: 100px;
+            background-color: yellowgreen;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 10px;
+
+            /* animation starts from here */
+            position: relative;
+
+            /* animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 1s; */
+
+            /* these are timing function : how fast/slow animation starts 
+            depends on this function */
+            /* animation-timing-function: linear;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+            animation-timing-function: linear;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+
+            /* animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
+            animation-fill-mode: both;
+            animation-fill-mode: none; */
+
+            /* shorthand notation for animatin 
+            @keyframes duration easing-function delay iteration-count direction 
+            fill-mode play-state name*/
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+
+        @keyframes rightMovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            to{
+                top:0;
+                left: 1200px;
+            }
+        }
+
+        .box2{
+            width: 300px;
+            height: 100px;
+            background-color: yellowgreen;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 10px;
+
+            position: relative;
+
+            /* shorthand notation for animation 
+            @keyframes duration easing-function delay iteration-count direction 
+            fill-mode play-state name*/
+            animation: 5s linear 1s infinite alternate none running leftMovement;
+        }
+
+        @keyframes leftMovement {
+            from{
+                top: 500px;
+                left: 1200px;
+            }
+
+            to{
+                top:500px;
+                left: 0;
+            }
+        }
+
+        #circle{
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 100px;
+            top: 100px;
+            left: 700px;
+
+            position: relative;
+
+            /* applying animation */
+            /* shorthand notation for animation 
+            @keyframes duration easing-function delay iteration-count direction 
+            fill-mode play-state name*/
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+        }
+
+        @keyframes circleMovement {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+
+            30%{
+                top:5%;
+                left: 90%;
+            }
+
+            60%{
+                top: 70%;
+                left: 10%;
+            }
+
+            100%{
+                top: 75%;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+
+        <div class="box2"></div>
+
+        <div id="circle"></div
+    </div>
+</body>
+</html>
+
+
+    

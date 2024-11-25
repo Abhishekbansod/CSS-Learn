@@ -1,0 +1,43 @@
+Display Property: 
+The display property in CSS specifies how an element(tags) is displayed on the web page. It determines the type of rendering box used for an element and its children, affecting its positioning and interaction within the document's flow and structure
+
+Properties:
+
+inline
+block
+inline-block 
+none
+
+
+Display Block-level elements
+
+div
+p
+h1 to h6
+
+Properties of block-level elements
+-> every block/element is displayed on new line
+-> default width - extreme left to extreme right due to which every element/block comes on new line
+-> it accepts the custum width/height  given by developer
+-> it accepts custome padding/margin given by developer
+
+box-sizing: border-box :
+-> When this property is used then actual dimentions of box stays the same even if you add margin, padding, height, width and so on
+-> If you do not use this property while using the margin, padding, height, width then dimentions gets changed/increases
+
+
+Display Inline elements:
+-> a anker tag
+-> span tag
+
+Properties:
+-> same line (tries to stay in same line if space/width is not there then jump to nxt line)
+-> width - its wisth is same as its content
+-> custome width/height is not accepted here
+-> custome margin/padding (horizontal is possible but vertically not possible)
+
+Display inline-block
+
+Properties
+-> behaves like inline
+-> can set custome height/width

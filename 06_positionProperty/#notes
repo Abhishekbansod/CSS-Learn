@@ -1,0 +1,36 @@
+Position Property
+This property is widely used for setting elements in diff diff positions
+
+Types of Position
+static - by default propert applied to elements
+relative
+absolute
+fixed
+sticky
+
+
+Relative :
+Keeping the current window in mind, we can change the position of image/element.
+And the gap maintained from where the image/element is moved to new position
+previous position space is maintained as it is
+
+Properties: 
+top
+right
+bottom
+left
+
+Absolute :
+It is relative to its closest positioned ancestor
+And gap is not maintained here
+
+Properties are same as relative
+
+Difference between fixed and sticky
+
+fixed :
+It behaves according to entire webpage
+
+sticky :
+It behaves/relative to parent element
+

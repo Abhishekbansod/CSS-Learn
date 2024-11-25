@@ -1,0 +1,9 @@
+Float and Clear :
+Float is used when user wants to display the paragraph with an image
+paragraph will cover the all the spaces expect the space where image is placed
+
+
+Clear
+Clear is used with float 
+when user wants to remove the left/right floating elements/images then clear can be used
+

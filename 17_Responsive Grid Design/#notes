@@ -1,0 +1,27 @@
+Responsive Websites using Grid 
+As the name suggests, it is used to make the websites responsive
+
+Used Properties in Responsive Grid Design
+
+grid-template-column: repeat(auto-fit, minmax(100px, 150px))
+
+minmax -> represents the size of cards/elements/div/container 
+100px -> min size 
+150px -> max size
+
+
+Grid Template Areas
+This is also used to create layouts very easiy
+
+Properties:
+
+#header{
+    grid-area: header;
+}
+
+grid-template-areas: 
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer"
+;
